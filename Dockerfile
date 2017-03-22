@@ -14,6 +14,5 @@ RUN         cd /root; npm test
 
 # TESTS PASSED -- CONFIGURE IMAGE
 WORKDIR     /root
-ENTRYPOINT  ["/usr/bin/npm"]
-CMD         ["start"]
+CMD         ["npm start"]
 EXPOSE      8080
