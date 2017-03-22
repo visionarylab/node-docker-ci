@@ -1,6 +1,5 @@
 FROM        node:latest
 
-
 # COMMIT PROJECT FILES
 ADD         package.json /root/
 ADD         test.js /root/
@@ -14,5 +13,5 @@ RUN         cd /root; npm test
 
 # TESTS PASSED -- CONFIGURE IMAGE
 WORKDIR     /root
-CMD         ["npm start"]
+CMD         ["npm", "start"]
 EXPOSE      8080
